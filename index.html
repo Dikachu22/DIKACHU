@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>$DIKACHU</title>
+    <link rel="icon" href="https://www.logolynx.com/images/logolynx/99/9947528637370ff5de0c7fb275f089cb.jpeg">
+   
+        
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            background-image: url('https://wallpapercave.com/wp/wp9568899.png'); /* Galaxy background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin-top: 2%;
+            animation: rotate 4s infinite linear;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin-top: 2%;
+        }
+
+        @keyframes rotate-clockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes rotate-anticlockwise {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(-360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .logo-clockwise {
+            animation: rotate-clockwise 4s infinite linear;
+        }
+
+        .logo-anticlockwise {
+            animation: rotate-anticlockwise 4s infinite linear;
+        }
+
+        .big-picture-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-top: 2%;
+        }
+
+        .big-picture {
+            width: 400px;
+            height: auto;
+            animation: float 5s infinite alternate;
+        }
+
+        #buy-button {
+            width: 150px; 
+            height: 50px; 
+            background-color: goldenrod;
+        	color: whitesmoke;
+            border: none;
+            border-radius: 25px; /* Adjust to half of the button's height for rounded corners */
+            font-size: 16px; 
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        #buy-button:hover {
+            transform: scale(1.05); /* Increase size on hover */
+            background-color: rgb(144, 105, 7); /* Darken background color on hover */
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 0;
+            width: 70px;
+            height: 70px;
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .coin-container {
+            width: 300px;
+            margin: 20px;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: pop 1s ease-in-out;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .coin-container:hover {     
+            transform: scale(1.1); /* Enlarge meme frame on hover */
+        }
+
+        .coin-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .coin-description {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="https://www.logolynx.com/images/logolynx/99/9947528637370ff5de0c7fb275f089cb.jpeg" alt="Dikachu Coin" class="logo logo-clockwise">
+        <h1>$DIKACHU</h1>
+        <p>Where growth meets humor. Inspired by Pikachu, our token's rising value is represented by a growing appendage. Join us for a unique journey filled with laughter and potential gains in the crypto world
+        </p>
+        
+    </header>
+
+    <div class="big-picture-container" alt="meme" class="big-picture">
+        <a href="/"><button id="buy-button">Click here to buy $Dikachu mate</button></a>
+        <img src="https://th.bing.com/th/id/OIP._rNkmr53MG5BZyNKQVpEzgHaHa?rs=1&pid=ImgDetMain" alt="Sassy Coin 12" style="max-width: 200px; display: block; margin: 0 auto;">
+        <div class="button-container">
+            <a href="https://t.me/Dikachuportal"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram" class="button"></a>
+            <a href="https://twitter.com/"><img src="https://cdn.mos.cms.futurecdn.net/Fsgb8v6Qw8aKEbfpp9YGV5-1200-80.jpg" alt="Twitter" class="button"></a>
+            <a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROm4hCI1BzXW6GuNjeOYLDphwzMhD1klin-yApDpccBg&s" alt="DexScreener" class="button"></a>
+        </div>
+    </div>
+
+
+            <!-- Add more coin containers with images and descriptions as needed -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+</body>
+
+</html>
